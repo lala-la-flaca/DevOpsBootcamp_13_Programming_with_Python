@@ -1,0 +1,29 @@
+# created by virtualenv automatically
+# Virtual Environment
+.venv/
+venv/
+
+# PyCharm
+.idea/
+*.iml
+.vscode/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
