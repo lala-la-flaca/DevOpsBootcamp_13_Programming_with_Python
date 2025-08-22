@@ -18,7 +18,7 @@ Develop a Python application that accepts a user-defined goal and deadline, then
 # 🏗 Project Architecture
 
 # ⚙️ Project Configuration
-1. Install Python locally on your machine, following the steps according to your OS.
+1. Install Python on your machine following the steps for your operating system:
    
    [Python](https://www.python.org/downloads/release/python-3137/)
    ```bash
@@ -27,7 +27,7 @@ Develop a Python application that accepts a user-defined goal and deadline, then
      python3 --version
    ```
    
-2. Install PyCharm following the steps according to your OS.
+2. Install PyCharm using the installation guide for your operating system:
    [PyCharm](https://www.jetbrains.com/help/pycharm/installation-guide.html)
    
 3. Import the datetime module.
@@ -36,33 +36,29 @@ Develop a Python application that accepts a user-defined goal and deadline, then
    from datetime import datetime
    ```
    
-4. Request the desired goal and deadline for the goal from the user.
+4. Ask the user to enter the goal and deadline, separated by a colon.
    
    ```bash
-     user_input = input("enter your goal with deadline separated by a colon ex: learn python:10.02.20024\n")
+   user_input = input("enter your goal with deadline separated by a colon ex: learn python:10.02.20024\n")
+   input_list = user_input.split(":")
+   print(input_list)
+   goal = input_list[0]
+   deadline = input_list[1]
    ```
   
-5. Save the input to a list variable to identify the goal and the deadline.
-   
-   ```bash
-       input_list = user_input.split(":")
-       print(input_list)
-       goal = input_list[0]
-       deadline = input_list[1]
-   ```
-   
 6. Convert the input deadline to a date format.
    
    ```bash
    deadline_date = datetime.strptime(deadline,"%d.%m.%Y")
    ```
    
-7. Check Today's date
+7. Get Today's date
    
    ```bash
    today_date = datetime.today()
    ```
-8. Calculate remaining days until deadline
+   
+8. Calculate the remaining days until the deadline.
    
    ```bash
       remaining_days = deadline_date - today_date
