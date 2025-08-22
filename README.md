@@ -35,6 +35,7 @@ Develop a Python application that accepts a user-defined goal and deadline, then
    ```bash
    from datetime import datetime
    ```
+   <img src="https://github.com/lala-la-flaca/DevOpsBootcamp_13_Programming_with_Python/blob/main/Img/imporitng%20date%20and%20time.PNG" width=800 />
    
 4. Ask the user to enter the goal and deadline, separated by a colon.
    
@@ -45,6 +46,7 @@ Develop a Python application that accepts a user-defined goal and deadline, then
    goal = input_list[0]
    deadline = input_list[1]
    ```
+   <img src="https://github.com/lala-la-flaca/DevOpsBootcamp_13_Programming_with_Python/blob/main/Img/4%20requetsing%20inpur%20to%20user.PNG" width=800 >
   
 6. Convert the input deadline to a date format.
    
@@ -66,3 +68,4 @@ Develop a Python application that accepts a user-defined goal and deadline, then
       remaining_hours = remaining_minutes/60
       print(f"Remaining days : {remaining_days.days} days to reach your goal: {goal}\nRemaining Hours: {remaining_hours} h\n")
    ```
+   <img src="https://github.com/lala-la-flaca/DevOpsBootcamp_13_Programming_with_Python/blob/main/Img/calculating%20days%20to%20goal.png" width=800 >
